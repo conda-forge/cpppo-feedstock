@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cpppo-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cpppo-{{ version }}.tar.gz
   sha256: 039d821d02895408299f2ac6db3b3f3d5f67a7581db34d5439aa6054d25ec234
   patches:
     - remove_getattr_entrypoint.diff
@@ -24,10 +24,10 @@ build:
 
 requirements:
   host:
-    - python >=3.0
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.0
+    - python >={{ python_min }}
     - greenery >=2.0,<3.0
 
 test:
@@ -41,6 +41,7 @@ test:
     - enip_client --help
     - enip_get_attribute --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
