@@ -8,10 +8,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cpppo-{{ version }}.tar.gz
   sha256: 039d821d02895408299f2ac6db3b3f3d5f67a7581db34d5439aa6054d25ec234
-  patches:
-    - remove_getattr_entrypoint.diff
-    # From https://github.com/pjkundert/cpppo/pull/110
-    - python-311-support-pr110.patch
 
 build:
   noarch: python
