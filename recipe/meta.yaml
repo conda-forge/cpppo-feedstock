@@ -38,7 +38,6 @@ test:
     - enip_client --help
     - enip_get_attribute --help
   requires:
-    - python {{ python_min }}
     - pip
 
 about:
