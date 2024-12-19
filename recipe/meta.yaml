@@ -33,12 +33,9 @@ test:
     - cpppo.server
     - cpppo.server.enip
   commands:
-    - pip check
     - enip_server --help
     - enip_client --help
     - enip_get_attribute --help
-  requires:
-    - pip
 
 about:
   home: https://github.com/pjkundert/cpppo
