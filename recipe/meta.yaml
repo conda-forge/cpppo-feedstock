@@ -1,5 +1,5 @@
 {% set name = "cpppo" %}
-{% set version = "5.2.1" %}
+{% set version = "5.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cpppo-{{ version }}.tar.gz
-  sha256: 50a3c34f2624d11c5f10f66912c61971334ee50d1452637e5fdf7b13a9cc2536
+  sha256: 17090caf87f294dd072eefc3ad2cd3f33c3a53e35055b272db4b57d065004640
 
 build:
   noarch: python
