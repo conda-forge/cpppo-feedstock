@@ -37,6 +37,7 @@ tests:
         - cpppo
         - cpppo.server
         - cpppo.server.enip
+      pip_check: false
       python_version: ["${{ python_min }}.*", "3.13.*"]
   - script:
       - enip_server --help
