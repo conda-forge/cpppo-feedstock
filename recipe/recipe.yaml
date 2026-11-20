@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: cpppo
-  version: "5.7.0"
+  version: "5.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/cpppo-${{ version }}.tar.gz
-  sha256: 18d69a45ecf0e802317a4fc8681d401d54b0d7730f536b906e2d477e52e393c6
+  sha256: 25f9714457de30475f3ba2d72b25b4a88e0bd4ab9ff729178b8c4cdf3e70ac38
 
 build:
   number: 0
